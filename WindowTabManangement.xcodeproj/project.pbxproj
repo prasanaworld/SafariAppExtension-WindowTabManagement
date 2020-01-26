@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6437131F23DDAE1A006FB295 /* WindowTabManangement.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 6437131E23DDAE1A006FB295 /* WindowTabManangement.entitlements */; };
+		6437132123DDAE1A006FB295 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437132023DDAE1A006FB295 /* AppDelegate.swift */; };
+		6437132423DDAE1A006FB295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6437132223DDAE1A006FB295 /* Main.storyboard */; };
+		6437132623DDAE1A006FB295 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437132523DDAE1A006FB295 /* ViewController.swift */; };
+		6437132823DDAE1B006FB295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6437132723DDAE1B006FB295 /* Assets.xcassets */; };
+		6437132F23DDAE1B006FB295 /* WindowTabManangement Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6437132E23DDAE1B006FB295 /* WindowTabManangement Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6437133423DDAE1B006FB295 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6437133323DDAE1B006FB295 /* Cocoa.framework */; };
+		6437133723DDAE1B006FB295 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437133623DDAE1B006FB295 /* SafariExtensionHandler.swift */; };
+		6437133923DDAE1B006FB295 /* SafariExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437133823DDAE1B006FB295 /* SafariExtensionViewController.swift */; };
+		6437133C23DDAE1B006FB295 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6437133A23DDAE1B006FB295 /* SafariExtensionViewController.xib */; };
+		6437133F23DDAE1B006FB295 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6437133E23DDAE1B006FB295 /* script.js */; };
+		6437134123DDAE1B006FB295 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6437134023DDAE1B006FB295 /* ToolbarItemIcon.pdf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6437133023DDAE1B006FB295 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6437131323DDAE1A006FB295 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6437132D23DDAE1B006FB295;
+			remoteInfo = "WindowTabManangement Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6437134823DDAE1B006FB295 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6437132F23DDAE1B006FB295 /* WindowTabManangement Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6437131B23DDAE1A006FB295 /* WindowTabManangement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WindowTabManangement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6437131E23DDAE1A006FB295 /* WindowTabManangement.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WindowTabManangement.entitlements; sourceTree = "<group>"; };
+		6437132023DDAE1A006FB295 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6437132323DDAE1A006FB295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6437132523DDAE1A006FB295 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6437132723DDAE1B006FB295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6437132923DDAE1B006FB295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6437132E23DDAE1B006FB295 /* WindowTabManangement Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WindowTabManangement Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6437133323DDAE1B006FB295 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		6437133623DDAE1B006FB295 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
+		6437133823DDAE1B006FB295 /* SafariExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionViewController.swift; sourceTree = "<group>"; };
+		6437133B23DDAE1B006FB295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/SafariExtensionViewController.xib; sourceTree = "<group>"; };
+		6437133D23DDAE1B006FB295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6437133E23DDAE1B006FB295 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
+		6437134023DDAE1B006FB295 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
+		6437134223DDAE1B006FB295 /* WindowTabManangement_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WindowTabManangement_Extension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6437131823DDAE1A006FB295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6437132B23DDAE1B006FB295 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6437133423DDAE1B006FB295 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6437131223DDAE1A006FB295 = {
+			isa = PBXGroup;
+			children = (
+				6437131D23DDAE1A006FB295 /* WindowTabManangement */,
+				6437133523DDAE1B006FB295 /* WindowTabManangement Extension */,
+				6437133223DDAE1B006FB295 /* Frameworks */,
+				6437131C23DDAE1A006FB295 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6437131C23DDAE1A006FB295 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6437131B23DDAE1A006FB295 /* WindowTabManangement.app */,
+				6437132E23DDAE1B006FB295 /* WindowTabManangement Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6437131D23DDAE1A006FB295 /* WindowTabManangement */ = {
+			isa = PBXGroup;
+			children = (
+				6437131E23DDAE1A006FB295 /* WindowTabManangement.entitlements */,
+				6437132023DDAE1A006FB295 /* AppDelegate.swift */,
+				6437132223DDAE1A006FB295 /* Main.storyboard */,
+				6437132523DDAE1A006FB295 /* ViewController.swift */,
+				6437132723DDAE1B006FB295 /* Assets.xcassets */,
+				6437132923DDAE1B006FB295 /* Info.plist */,
+			);
+			path = WindowTabManangement;
+			sourceTree = "<group>";
+		};
+		6437133223DDAE1B006FB295 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6437133323DDAE1B006FB295 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6437133523DDAE1B006FB295 /* WindowTabManangement Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6437133623DDAE1B006FB295 /* SafariExtensionHandler.swift */,
+				6437133823DDAE1B006FB295 /* SafariExtensionViewController.swift */,
+				6437133A23DDAE1B006FB295 /* SafariExtensionViewController.xib */,
+				6437133D23DDAE1B006FB295 /* Info.plist */,
+				6437133E23DDAE1B006FB295 /* script.js */,
+				6437134023DDAE1B006FB295 /* ToolbarItemIcon.pdf */,
+				6437134223DDAE1B006FB295 /* WindowTabManangement_Extension.entitlements */,
+			);
+			path = "WindowTabManangement Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6437131A23DDAE1A006FB295 /* WindowTabManangement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6437134923DDAE1B006FB295 /* Build configuration list for PBXNativeTarget "WindowTabManangement" */;
+			buildPhases = (
+				6437131723DDAE1A006FB295 /* Sources */,
+				6437131823DDAE1A006FB295 /* Frameworks */,
+				6437131923DDAE1A006FB295 /* Resources */,
+				6437134823DDAE1B006FB295 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6437133123DDAE1B006FB295 /* PBXTargetDependency */,
+			);
+			name = WindowTabManangement;
+			productName = WindowTabManangement;
+			productReference = 6437131B23DDAE1A006FB295 /* WindowTabManangement.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6437132D23DDAE1B006FB295 /* WindowTabManangement Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6437134523DDAE1B006FB295 /* Build configuration list for PBXNativeTarget "WindowTabManangement Extension" */;
+			buildPhases = (
+				6437132A23DDAE1B006FB295 /* Sources */,
+				6437132B23DDAE1B006FB295 /* Frameworks */,
+				6437132C23DDAE1B006FB295 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WindowTabManangement Extension";
+			productName = "WindowTabManangement Extension";
+			productReference = 6437132E23DDAE1B006FB295 /* WindowTabManangement Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6437131323DDAE1A006FB295 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Prasana Kannan";
+				TargetAttributes = {
+					6437131A23DDAE1A006FB295 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					6437132D23DDAE1B006FB295 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 6437131623DDAE1A006FB295 /* Build configuration list for PBXProject "WindowTabManangement" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6437131223DDAE1A006FB295;
+			productRefGroup = 6437131C23DDAE1A006FB295 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6437131A23DDAE1A006FB295 /* WindowTabManangement */,
+				6437132D23DDAE1B006FB295 /* WindowTabManangement Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6437131923DDAE1A006FB295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6437131F23DDAE1A006FB295 /* WindowTabManangement.entitlements in Resources */,
+				6437132823DDAE1B006FB295 /* Assets.xcassets in Resources */,
+				6437132423DDAE1A006FB295 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6437132C23DDAE1B006FB295 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6437134123DDAE1B006FB295 /* ToolbarItemIcon.pdf in Resources */,
+				6437133C23DDAE1B006FB295 /* SafariExtensionViewController.xib in Resources */,
+				6437133F23DDAE1B006FB295 /* script.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6437131723DDAE1A006FB295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6437132623DDAE1A006FB295 /* ViewController.swift in Sources */,
+				6437132123DDAE1A006FB295 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6437132A23DDAE1B006FB295 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6437133923DDAE1B006FB295 /* SafariExtensionViewController.swift in Sources */,
+				6437133723DDAE1B006FB295 /* SafariExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6437133123DDAE1B006FB295 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6437132D23DDAE1B006FB295 /* WindowTabManangement Extension */;
+			targetProxy = 6437133023DDAE1B006FB295 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6437132223DDAE1A006FB295 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6437132323DDAE1A006FB295 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6437133A23DDAE1B006FB295 /* SafariExtensionViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6437133B23DDAE1B006FB295 /* Base */,
+			);
+			name = SafariExtensionViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6437134323DDAE1B006FB295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6437134423DDAE1B006FB295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6437134623DDAE1B006FB295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WindowTabManangement Extension/WindowTabManangement_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WindowTabManangement Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Prasanaworld.WindowTabManangement-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6437134723DDAE1B006FB295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "WindowTabManangement Extension/WindowTabManangement_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "WindowTabManangement Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Prasanaworld.WindowTabManangement-Extension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		6437134A23DDAE1B006FB295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WindowTabManangement/WindowTabManangement.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WindowTabManangement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Prasanaworld.WindowTabManangement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6437134B23DDAE1B006FB295 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WindowTabManangement/WindowTabManangement.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WindowTabManangement/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Prasanaworld.WindowTabManangement;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6437131623DDAE1A006FB295 /* Build configuration list for PBXProject "WindowTabManangement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6437134323DDAE1B006FB295 /* Debug */,
+				6437134423DDAE1B006FB295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6437134523DDAE1B006FB295 /* Build configuration list for PBXNativeTarget "WindowTabManangement Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6437134623DDAE1B006FB295 /* Debug */,
+				6437134723DDAE1B006FB295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6437134923DDAE1B006FB295 /* Build configuration list for PBXNativeTarget "WindowTabManangement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6437134A23DDAE1B006FB295 /* Debug */,
+				6437134B23DDAE1B006FB295 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6437131323DDAE1A006FB295 /* Project object */;
+}
