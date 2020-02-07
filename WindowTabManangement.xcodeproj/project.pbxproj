@@ -19,6 +19,14 @@
 		6437133C23DDAE1B006FB295 /* SafariExtensionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6437133A23DDAE1B006FB295 /* SafariExtensionViewController.xib */; };
 		6437133F23DDAE1B006FB295 /* script.js in Resources */ = {isa = PBXBuildFile; fileRef = 6437133E23DDAE1B006FB295 /* script.js */; };
 		6437134123DDAE1B006FB295 /* ToolbarItemIcon.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 6437134023DDAE1B006FB295 /* ToolbarItemIcon.pdf */; };
+		6437135023DDB3D5006FB295 /* SafariWindowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437134F23DDB3D5006FB295 /* SafariWindowExtension.swift */; };
+		6437135223DDB48C006FB295 /* SafariWTPExtensionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437135123DDB48C006FB295 /* SafariWTPExtensionProtocol.swift */; };
+		6437135423DDB67A006FB295 /* SafariTabExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437135323DDB67A006FB295 /* SafariTabExtension.swift */; };
+		6437135623DDB744006FB295 /* SafariPageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6437135523DDB744006FB295 /* SafariPageExtension.swift */; };
+		6437135823DDE205006FB295 /* safariWTPManager.js in Resources */ = {isa = PBXBuildFile; fileRef = 6437135723DDE205006FB295 /* safariWTPManager.js */; };
+		645B979E23DE059700F8F26B /* SafariWindowTabManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645B979D23DE059700F8F26B /* SafariWindowTabManager.swift */; };
+		645B97A123DE99C300F8F26B /* CustomEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645B97A023DE99C300F8F26B /* CustomEvent.swift */; };
+		645B97A323DF482C00F8F26B /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 645B97A223DF482C00F8F26B /* Demo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +70,14 @@
 		6437133E23DDAE1B006FB295 /* script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = script.js; sourceTree = "<group>"; };
 		6437134023DDAE1B006FB295 /* ToolbarItemIcon.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ToolbarItemIcon.pdf; sourceTree = "<group>"; };
 		6437134223DDAE1B006FB295 /* WindowTabManangement_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WindowTabManangement_Extension.entitlements; sourceTree = "<group>"; };
+		6437134F23DDB3D5006FB295 /* SafariWindowExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWindowExtension.swift; sourceTree = "<group>"; };
+		6437135123DDB48C006FB295 /* SafariWTPExtensionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWTPExtensionProtocol.swift; sourceTree = "<group>"; };
+		6437135323DDB67A006FB295 /* SafariTabExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariTabExtension.swift; sourceTree = "<group>"; };
+		6437135523DDB744006FB295 /* SafariPageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariPageExtension.swift; sourceTree = "<group>"; };
+		6437135723DDE205006FB295 /* safariWTPManager.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = safariWTPManager.js; sourceTree = "<group>"; };
+		645B979D23DE059700F8F26B /* SafariWindowTabManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWindowTabManager.swift; sourceTree = "<group>"; };
+		645B97A023DE99C300F8F26B /* CustomEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEvent.swift; sourceTree = "<group>"; };
+		645B97A223DF482C00F8F26B /* Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +142,9 @@
 		6437133523DDAE1B006FB295 /* WindowTabManangement Extension */ = {
 			isa = PBXGroup;
 			children = (
+				6437134C23DDAE95006FB295 /* SafariWindowTab */,
 				6437133623DDAE1B006FB295 /* SafariExtensionHandler.swift */,
+				645B97A223DF482C00F8F26B /* Demo.swift */,
 				6437133823DDAE1B006FB295 /* SafariExtensionViewController.swift */,
 				6437133A23DDAE1B006FB295 /* SafariExtensionViewController.xib */,
 				6437133D23DDAE1B006FB295 /* Info.plist */,
@@ -135,6 +153,20 @@
 				6437134223DDAE1B006FB295 /* WindowTabManangement_Extension.entitlements */,
 			);
 			path = "WindowTabManangement Extension";
+			sourceTree = "<group>";
+		};
+		6437134C23DDAE95006FB295 /* SafariWindowTab */ = {
+			isa = PBXGroup;
+			children = (
+				645B97A023DE99C300F8F26B /* CustomEvent.swift */,
+				6437135723DDE205006FB295 /* safariWTPManager.js */,
+				6437135123DDB48C006FB295 /* SafariWTPExtensionProtocol.swift */,
+				6437134F23DDB3D5006FB295 /* SafariWindowExtension.swift */,
+				6437135323DDB67A006FB295 /* SafariTabExtension.swift */,
+				6437135523DDB744006FB295 /* SafariPageExtension.swift */,
+				645B979D23DE059700F8F26B /* SafariWindowTabManager.swift */,
+			);
+			path = SafariWindowTab;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +262,7 @@
 			files = (
 				6437134123DDAE1B006FB295 /* ToolbarItemIcon.pdf in Resources */,
 				6437133C23DDAE1B006FB295 /* SafariExtensionViewController.xib in Resources */,
+				6437135823DDE205006FB295 /* safariWTPManager.js in Resources */,
 				6437133F23DDAE1B006FB295 /* script.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -250,8 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6437135423DDB67A006FB295 /* SafariTabExtension.swift in Sources */,
 				6437133923DDAE1B006FB295 /* SafariExtensionViewController.swift in Sources */,
+				645B97A123DE99C300F8F26B /* CustomEvent.swift in Sources */,
+				6437135623DDB744006FB295 /* SafariPageExtension.swift in Sources */,
+				6437135023DDB3D5006FB295 /* SafariWindowExtension.swift in Sources */,
+				6437135223DDB48C006FB295 /* SafariWTPExtensionProtocol.swift in Sources */,
+				645B97A323DF482C00F8F26B /* Demo.swift in Sources */,
 				6437133723DDAE1B006FB295 /* SafariExtensionHandler.swift in Sources */,
+				645B979E23DE059700F8F26B /* SafariWindowTabManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +444,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WindowTabManangement Extension/WindowTabManangement_Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "WindowTabManangement Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,6 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Prasanaworld.WindowTabManangement-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -422,7 +465,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "WindowTabManangement Extension/WindowTabManangement_Extension.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "WindowTabManangement Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -431,6 +476,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Prasanaworld.WindowTabManangement-Extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -442,8 +488,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WindowTabManangement/WindowTabManangement.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WindowTabManangement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -451,6 +499,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Prasanaworld.WindowTabManangement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -461,8 +510,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = WindowTabManangement/WindowTabManangement.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = WindowTabManangement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -470,6 +521,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Prasanaworld.WindowTabManangement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

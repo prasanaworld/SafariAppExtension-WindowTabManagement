@@ -34,6 +34,10 @@
 				<key>Script</key>
 				<string>script.js</string>
 			</dict>
+            <dict>
+                <key>Script</key>
+                <string>safariWTPManager.js</string>
+            </dict>
 		</array>
 		<key>SFSafariToolbarItem</key>
 		<dict>
@@ -46,15 +50,11 @@
 			<key>Label</key>
 			<string>Your Button</string>
 		</dict>
-		<key>SFSafariWebsiteAccess</key>
-		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>*.webkit.org</string>
-			</array>
-			<key>Level</key>
-			<string>Some</string>
-		</dict>
+        <key>SFSafariWebsiteAccess</key>
+        <dict>
+            <key>Level</key>
+            <string>All</string>
+        </dict>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2020 Prasana Kannan. All rights reserved.</string>

@@ -8,18 +8,33 @@
 
 import SafariServices
 
+
 class SafariExtensionHandler: SFSafariExtensionHandler {
     
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        // This method will be called when a content script provided by your extension calls safari.extension.dispatchMessage("message").
-        page.getPropertiesWithCompletionHandler { properties in
-            NSLog("The extension received a message (\(messageName)) from a script injected into (\(String(describing: properties?.url))) with userInfo (\(userInfo ?? [:]))")
+        
+        if (!Demo.isRegistered) {
+            Demo.register();
         }
+        
+        // Should ProcessMessage to know whether it window/tab/page related Event
+        WindowTabEventManager.analyzeEventMessage(message: messageName, page: page)
     }
     
     override func toolbarItemClicked(in window: SFSafariWindow) {
         // This method will be called when your toolbar item is clicked.
-        NSLog("The extension's toolbar item was clicked")
+        print(window.id)
+        
+        // Print the list of windows and their corresponding ID
+        SFSafariWindow.getAllWindowsWithID { windowList in
+            print("windowList", windowList);
+        }
+        
+        // Print the list of tabs and their corresponding ID
+        SFSafariTab.getAllTabsWithID { pageList in
+            print("pageList", pageList);
+        }
+        
     }
     
     override func validateToolbarItem(in window: SFSafariWindow, validationHandler: @escaping ((Bool, String) -> Void)) {
@@ -30,5 +45,4 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     override func popoverViewController() -> SFSafariExtensionViewController {
         return SafariExtensionViewController.shared
     }
-
 }
